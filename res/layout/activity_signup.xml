@@ -1,0 +1,210 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/txtpatientname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Enter Name"
+            android:textAllCaps="true"
+            android:textColor="@color/sinch_purple"
+            android:textSize="20sp"
+           />
+
+        <EditText
+            android:id="@+id/patientname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtpatientname"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+             android:background="@drawable/inputbox"
+            android:padding="10dp"
+            android:textColor="@color/sinch_purple"
+            android:textSize="32sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtpatientcnic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/patientname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Enter Cnic"
+             android:textAllCaps="true"
+            android:textColor="@color/sinch_purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/patientcnic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtpatientcnic"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+             android:background="@drawable/inputbox"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/sinch_purple"
+            android:textSize="32sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtpatientpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/patientcnic"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Enter password"
+              android:textAllCaps="true"
+            android:textColor="@color/sinch_purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/patientpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtpatientpassword"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:background="@drawable/inputbox"
+            android:padding="10dp"
+            android:textColor="@color/sinch_purple"
+            android:textSize="32sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/signupbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patientdob"
+            android:layout_centerHorizontal="true"
+            android:background="#03CFAE"
+            android:padding="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/txtpatientgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/patientpassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Enter Gender"
+             android:textAllCaps="true"
+            android:textColor="@color/sinch_purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/patientgender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtpatientgender"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+             android:background="@drawable/inputbox"
+            android:ems="10"
+            android:padding="10dp"
+            android:textColor="@color/sinch_purple"
+            android:textSize="32sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtpatientcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/patientgender"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Enter Contact"
+             android:textAllCaps="true"
+            android:textColor="@color/sinch_purple"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/patientcontact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtpatientcontact"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+             android:background="@drawable/inputbox"
+            android:padding="10dp"
+            android:textColor="@color/sinch_purple"
+            android:textSize="32sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtpatientdob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/patientcontact"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Enter Dob"
+            android:textAllCaps="true"
+            android:textColor="@color/sinch_purple"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/patientdob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtpatientdob"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+             android:background="@drawable/inputbox"
+            android:ems="10"
+            android:padding="10dp"
+            android:textColor="@color/sinch_purple"
+            android:textSize="32sp" >
+        </EditText>
+    </RelativeLayout>
+
+</ScrollView>

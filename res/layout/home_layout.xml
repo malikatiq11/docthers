@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/desktop">
+        
+    </ImageView>
+    <TextView 
+           android:layout_marginTop="25dp"
+           android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What we Do"
+        android:textSize="20sp"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="doctHERs™ is a novel healthcare marketplace that connects female doctors to millions of underserved patients in real-time while leveraging online technology. doctHERs™ circumvents socio-cultural barriers that restrict women to their homes, while correcting two market failures: access to quality healthcare and inclusion in the professional workforce for unemployed, qualified health professionals. "/>
+
+
+</LinearLayout>

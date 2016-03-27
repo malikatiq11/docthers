@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.patient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NETWORK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name=".Welcome"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".SearchDoctor"
+            android:label="@string/title_activity_search_doctor" >
+        </activity>
+        <activity
+            android:name=".ViewPatie"
+            android:label="@string/title_activity_view_patie" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MessagingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AndroidTabLayoutActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+         <service android:name=".SinchService"/>
+        <!-- Songs Activity -->
+        <activity android:name=".DoctorsActivity" />
+
+        <!-- Videos Activity -->
+        <activity android:name=".ChatActivity" />
+
+        <!-- Photos Activity -->
+        <activity android:name=".HomeActivity" />
+        
+        <service android:name=".SinchServiceCall"></service>
+        <activity
+            android:name=".Splash"
+            android:label="Docthers" 
+             android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+      
+         <service android:name=".SinchServiceCall"></service>
+        <activity
+                android:name=".LoginActivityCall"
+                android:label="Calls"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CallScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".IncomingCallScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PlaceCallActivity" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
